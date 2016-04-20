@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_infopoint_list_item"
+    android:paddingTop="@dimen/vertical_margin"
+    android:paddingBottom="@dimen/vertical_margin"
+    android:paddingEnd="@dimen/horizontal_margin"
+    android:paddingStart="@dimen/horizontal_margin">
+
+    <ImageButton
+        android:id="@+id/item_favourite_toggle"
+        android:layout_width="@dimen/default_touch_area"
+        android:layout_height="@dimen/default_touch_area"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_star_empty"
+        tools:ignore="contentDescription" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/item_favourite_toggle"
+        android:textSize="@dimen/text_size_info_point_large"
+        android:textStyle="bold"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/item_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_title"
+        android:layout_toStartOf="@id/item_favourite_toggle"
+        android:textSize="@dimen/text_size_info_point_small"
+        android:text="@string/address" />
+
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_address"
+        android:layout_toStartOf="@id/item_favourite_toggle"
+        android:textSize="@dimen/text_size_info_point_small"
+        android:text="@string/description" />
+
+    <TextView
+        android:id="@+id/item_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_description"
+        android:layout_toStartOf="@id/item_favourite_toggle"
+        android:textSize="@dimen/text_size_info_point_small"
+        android:text="@string/longitude" />
+
+    <TextView
+        android:id="@+id/item_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_longitude"
+        android:layout_toStartOf="@id/item_favourite_toggle"
+        android:textSize="@dimen/text_size_info_point_small"
+        android:text="@string/latitude" />
+
+</RelativeLayout>

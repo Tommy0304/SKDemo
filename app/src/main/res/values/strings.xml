@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Info Point Manager</string>
+    <string name="app_title">Info Point Map</string>
+
+    <!--General strings-->
+    <string name="ok">OK</string>
+    <string name="done">Done</string>
+    <string name="create">Create</string>
+    <string name="remove">Remove</string>
+    <string name="view_details">View details</string>
+    <string name="cancel">Cancel</string>
+    <string name="info_point_label">Please complete the fields below</string>
+    <string name="map_style_selector_label">Select your favourite map style</string>
+
+    <!--Info Point hints-->
+    <string name="hint_title">Title</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_description">Description</string>
+
+    <!--Confirmation messages-->
+    <string name="infopoint_created">Info Point created!!</string>
+    <string name="map_res_copied_in_prev_run">Map resources copied in a previous run</string>
+    <string name="map_res_copied">Map resources were copied</string>
+
+    <!--Resource path tokens-->
+    <string name="day_dir">daystyle/</string>
+    <string name="night_dir">nightstyle/</string>
+    <string name="grayscale_dir">grayscalestyle/</string>
+    <string name="outdoor_dir">outdoorstyle/</string>
+    <string name="day_file">daystyle.json</string>
+    <string name="night_file">nightstyle.json</string>
+    <string name="grayscale_file">grayscalestyle.json</string>
+    <string name="outdoor_file">outdoorstyle.json</string>
+
+    <!--Map styles-->
+    <string name="daystyle">Daystyle</string>
+    <string name="nightstyle">Nightstyle</string>
+    <string name="grayscalestyle">Grayscalestyle</string>
+    <string name="outdoorstyle">Outdoorstyle</string>
+
+    <!--Info Point labels-->
+    <string name="address">Address:</string>
+    <string name="description">Description:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="latitude">Latitude:</string>
+
+    <!--Error messages-->
+    <string name="error_title_empty">Title field empty</string>
+    <string name="error_address_empty">Address field empty</string>
+
+</resources>

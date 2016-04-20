@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/horizontal_margin"
+        android:paddingStart="@dimen/horizontal_margin">
+
+        <TextView
+            android:id="@+id/info_point_label"
+            style="@style/TextSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_touch_area"
+            android:text="@string/info_point_label" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/info_point_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_point_label">
+
+            <EditText
+                android:id="@+id/info_point_title_input"
+                style="@style/TextPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_touch_area"
+                android:inputType="textCapSentences"
+                android:hint="@string/hint_title" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/info_point_address_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_point_title_container">
+
+            <EditText
+                android:id="@+id/info_point_address_input"
+                style="@style/TextPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_touch_area"
+                android:inputType="textCapSentences"
+                android:hint="@string/hint_address" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/info_point_description_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_point_address_container">
+
+            <EditText
+                android:id="@+id/info_point_description_input"
+                style="@style/TextPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/default_touch_area"
+                android:inputType="textCapSentences|textMultiLine"
+                android:hint="@string/hint_description" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/info_point_cancel_button"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/default_touch_area"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/info_point_description_container"
+            android:text="@string/cancel"/>
+
+        <Button
+            android:id="@+id/info_point_submit_button"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/default_touch_area"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            tools:text="Submit"/>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/horizontal_margin"
+    android:paddingStart="@dimen/horizontal_margin">
+
+    <TextView
+        android:id="@+id/map_style_label"
+        style="@style/TextSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_touch_area"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:text="@string/map_style_selector_label"
+        android:typeface="serif" />
+
+    <RadioGroup
+        android:id="@+id/map_style_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map_style_label"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/map_style_day_radio_button"
+            style="@style/TextPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_touch_area"
+            android:text="@string/daystyle" />
+
+        <RadioButton
+            android:id="@+id/map_style_night_radio_button"
+            style="@style/TextPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_touch_area"
+            android:text="@string/nightstyle" />
+
+        <RadioButton
+            android:id="@+id/map_style_grayscale_radio_button"
+            style="@style/TextPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_touch_area"
+            android:text="@string/grayscalestyle" />
+
+        <RadioButton
+            android:id="@+id/map_style_outdoor_radio_button"
+            style="@style/TextPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_touch_area"
+            android:text="@string/outdoorstyle" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/map_style_cancel_button"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/default_touch_area"
+        android:layout_below="@id/map_style_radio_group"
+        android:text="@string/cancel"/>
+
+    <Button
+        android:id="@+id/map_style_submit_button"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/default_touch_area"
+        android:layout_alignTop="@id/map_style_cancel_button"
+        android:layout_alignParentEnd="true"
+        android:text="@string/done"/>
+
+</RelativeLayout>
