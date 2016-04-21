@@ -6,4 +6,6 @@
 
     <color name="text_primary">@android:color/black</color>
     <color name="text_secondary">#18541b</color>
+
+    <color name="colorButtonBackground">#770000</color>
 </resources>

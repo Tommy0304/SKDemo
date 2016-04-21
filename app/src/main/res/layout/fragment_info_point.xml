@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,8 +28,8 @@
                 style="@style/TextPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/default_touch_area"
-                android:inputType="textCapSentences"
-                android:hint="@string/hint_title" />
+                android:hint="@string/hint_title"
+                android:inputType="textCapSentences" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -43,8 +43,8 @@
                 style="@style/TextPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/default_touch_area"
-                android:inputType="textCapSentences"
-                android:hint="@string/hint_address" />
+                android:hint="@string/hint_address"
+                android:inputType="textCapSentences" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -58,26 +58,28 @@
                 style="@style/TextPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="@dimen/default_touch_area"
+                android:hint="@string/hint_description"
                 android:inputType="textCapSentences|textMultiLine"
-                android:hint="@string/hint_description" />
+                android:minHeight="@dimen/default_touch_area" />
         </android.support.design.widget.TextInputLayout>
 
         <Button
             android:id="@+id/info_point_cancel_button"
-            android:layout_width="100dp"
+            android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/default_touch_area"
             android:layout_alignParentBottom="true"
             android:layout_below="@id/info_point_description_container"
-            android:text="@string/cancel"/>
+            android:background="@drawable/bg_button"
+            android:text="@string/cancel" />
 
         <Button
             android:id="@+id/info_point_submit_button"
-            android:layout_width="100dp"
+            android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/default_touch_area"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            tools:text="Submit"/>
+            android:background="@drawable/bg_button"
+            tools:text="Submit" />
 
     </RelativeLayout>
 </ScrollView>

@@ -53,17 +53,19 @@
 
     <Button
         android:id="@+id/map_style_cancel_button"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/default_touch_area"
         android:layout_below="@id/map_style_radio_group"
-        android:text="@string/cancel"/>
+        android:background="@drawable/bg_button"
+        android:text="@string/cancel" />
 
     <Button
         android:id="@+id/map_style_submit_button"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/default_touch_area"
-        android:layout_alignTop="@id/map_style_cancel_button"
         android:layout_alignParentEnd="true"
-        android:text="@string/done"/>
+        android:layout_alignTop="@id/map_style_cancel_button"
+        android:background="@drawable/bg_button"
+        android:text="@string/done" />
 
 </RelativeLayout>

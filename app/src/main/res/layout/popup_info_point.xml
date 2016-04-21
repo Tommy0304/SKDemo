@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bg_popup_gradient"
     android:paddingEnd="@dimen/horizontal_margin"
     android:paddingStart="@dimen/horizontal_margin">
@@ -20,7 +20,8 @@
         android:layout_width="wrap_content"
         android:layout_height="@dimen/default_touch_area"
         android:layout_below="@id/popup_title"
-        android:text="@string/remove"/>
+        android:background="@drawable/bg_button"
+        android:text="@string/remove" />
 
     <Button
         android:id="@+id/popup_view_details_button"
@@ -29,13 +30,15 @@
         android:layout_below="@id/popup_title"
         android:layout_toEndOf="@id/popup_remove_button"
         android:layout_toStartOf="@+id/popup_cancel_button"
-        android:text="@string/view_details"/>
+        android:background="@drawable/bg_button"
+        android:text="@string/view_details" />
 
     <Button
         android:id="@id/popup_cancel_button"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/default_touch_area"
-        android:layout_below="@id/popup_title"
         android:layout_alignParentEnd="true"
-        android:text="@string/cancel"/>
+        android:layout_below="@id/popup_title"
+        android:background="@drawable/bg_button"
+        android:text="@string/cancel" />
 </RelativeLayout>

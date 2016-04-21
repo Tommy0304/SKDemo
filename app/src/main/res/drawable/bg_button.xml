@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/default_button_padding_horizontal"
+    android:insetTop="@dimen/default_button_padding_vertical"
+    android:insetRight="@dimen/default_button_padding_horizontal"
+    android:insetBottom="@dimen/default_button_padding_vertical">
+    <shape android:shape="rectangle">
+        <corners android:radius="@dimen/default_button_radius" />
+        <solid android:color="@color/colorButtonBackground" />
+    </shape>
+</inset>
